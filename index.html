@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet">
+    <title>TimeTravel Agency | Voyages Temporels de Luxe</title>
+    <link rel="icon"
+        href="image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏳</text></svg>">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">TimeTravel Agency</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#resa">Réservation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Plongez dans le temps avec TimeTravel Agency</h1>
+            <p>
+                Voyagez à Paris 1889, au Crétacé ou à Florence 1504 grâce à notre technologie temporelle de luxe.
+                Un guide IA personnalisé vous accompagne à chaque étape.
+            </p>
+            <a href="#destinations" class="btn">Découvrir les époques</a>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">À propos de TimeTravel Agency</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto; color: var(--text-muted);">
+                TimeTravel Agency est une agence de voyage temporel de luxe, spécialisée dans les expériences
+                historiques immersives.
+                Nos voyages combinent confort moderne, sécurité absolue et une immersion totale dans les époques
+                choisies.
+            </p>
+        </div>
+    </section>
+
+    <!-- Destinations -->
+    <section id="destinations" class="section">
+        <div class="container">
+            <h2 class="section-title">Nos destinations temporelles</h2>
+            <div class="destinations">
+                <!-- Paris 1889 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80"
+                            alt="Paris 1889 - Tour Eiffel" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Paris 1889 – La Belle Époque</h3>
+                        <p>
+                            Découvrez Paris lors de l’Exposition Universelle, avec la Tour Eiffel fraîchement inaugurée,
+                            les cafés littéraires et l’effervescence artistique de la fin du XIXᵉ siècle.
+                        </p>
+                        <p class="card-price">À partir de 1 200 €</p>
+                        <a href="#resa" class="            <a href=" #resa" class="btn">Réserver ce voyage</a>
+                    </div>
+                </div>
+
+                <!-- Crétacé -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2c1?q=80"
+                            alt="Crétacé - Dinosaures" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Crétacé – 65 millions d'années</h3>
+                        <p>
+                            Marchez parmi les paysages préhistoriques, découvrez la faune du Crétacé
+                            et vivez une aventure unique au cœur de la nature sauvage primordiale.
+                        </p>
+                        <p class="card-price">À partir de 2 500 €</p>
+                        <a href="#resa" class="btn">Réserver ce voyage</a>
+                    </div>
+                </div>
+
+                <!-- Florence 1504 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1604176425362-5b3e4f6be0e2?q=80"
+                            alt="Florence 1504 - Renaissance" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Florence 1504 – Renaissance</h3>
+                        <p>
+                            Plongez dans l’âge d’or de l’art, avec Michel-Ange, Léonard de Vinci et la naissance
+                            du génie créatif Renaissance au cœur de la ville de Florence.
+                        </p>
+                        <p class="card-price">À partir de 1 800 €</p>
+                        <a href="#resa" class="btn">Réserver ce voyage</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Réservation -->
+    <section id="resa" class="section">
+        <div class="container">
+            <h2 class="section-title">Réserver votre voyage temporel</h2>
+            <div class="pricing">
+                <h3>Choisissez votre aventure</h3>
+                <form id="booking-form">
+                    <label for="destination">Destination</label>
+                    <select id="destination" required>
+                        <option value="">Sélectionnez une destination</option>
+                        <option value="paris-1889">Paris 1889 – La Belle Époque</option>
+                        <option value="cretace">Crétacé – 65 millions d’années</option>
+                        <option value="florence-1504">Florence 1504 – Renaissance</option>
+                    </select>
+
+                    <label for="dates">Dates (aller-retour)</label>
+                    <input type="text" id="dates" placeholder="Ex. 15–20 juillet 2089" required />
+
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="votre@email.com" required />
+
+                    <button type="submit" class="btn pricing-btn">Valider la réservation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / FAQ -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Questions fréquentes</h2>
+            <details style="margin-bottom: 1rem;">
+                <summary style="color: var(--accent-light); cursor: pointer; font-weight: 600;">Les voyages sont-ils
+                    sécurisés ?</summary>
+                <p style="color: var(--text-muted); margin-top: 0.5rem;">
+                    Oui. Tous nos voyages utilisent un protocole temporel certifié, avec des flux stabilisateurs
+                    et une supervision 24h/24 par notre équipe technique.
+                </p>
+            </details>
+            <details style="margin-bottom: 1rem;">
+                <summary style="color: var(--accent-light); cursor: pointer; font-weight: 600;">Peut-on changer d’époque
+                    pendant le voyage ?</summary>
+                <p style="color: var(--text-muted); margin-top: 0.5rem;">
+                    Possible selon les forfaits “Premium” et “VIP”. Un supplément s’applique pour les ajustements
+                    temporels.
+                </p>
+            </details>
+            <details>
+                <summary style="color: var(--accent-light); cursor: pointer; font-weight: 600;">Comment est définie la
+                    politique de prix ?</summary>
+                <p style="color: var(--text-muted); margin-top: 0.5rem;">
+                    Les tarifs sont calculés en fonction de la rareté de l’événement, de la durée du séjour
+                    et de la complexité du retour dans notre ère.
+                </p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h4>TimeTravel Agency</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 250px;">
+                    Agence de voyage temporel de luxe, spécialisée dans Paris 1889, le Crétacé et Florence 1504.
+                </p>
+            </div>
+            <div class="footer-column">
+                <h4>Liens rapides</h4>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#resa">Réservation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Conditions de sécurité temporelle</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 TimeTravel Agency – Projet pédagogique M1/M2 Digital & IA
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <h4>Assistant IA TimeTravel</h4>
+            <button class="chatbot-close" id="chat-close">×</button>
+        </div>
+        <div class="chatbot-messages" id="chat-messages">
+            <div class="message bot">
+                Bonjour, je suis l’assistant IA de TimeTravel Agency.
+                Comment puis-je vous aider dans le choix de votre voyage temporel ?
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chat-input" placeholder="Posez-moi vos questions sur les voyages temporels..." />
+            <button id="chat-send">Envoyer</button>
+        </div>
+    </div>
+
+    <!-- Bouton ouvre/ferme le chatbot -->
+    <button id="chat-toggle" class="chat-toggle">
+        <span class="chat-icon">💬</span>
+    </button>
+
+    <!-- Script JS minimal -->
+    <script>
+        // Toggle chatbot
+        const chatbot = document.getElementById("chatbot");
+        const chatToggle = document.getElementById("chat-toggle");
+        const chatClose = document.getElementById("chat-close");
+        const chatMessages = document.getElementById("chat-messages");
+        const chatInput = document.getElementById("chat-input");
+        const chatSend = document.getElementById("chat-send");
+
+        chatToggle.addEventListener("click", () => {
+            chatbot.style.display = "block";
+            chatToggle.style.display = "none";
+        });
+
+        chatClose.addEventListener("click", () => {
+            chatbot.style.display = "none";
+            chatToggle.style.display = "flex";
+        });
+
+        // Ajouter un message dans le chat
+        function addMessage(text, fromUser) {
+            const msg = document.createElement("div");
+            msg.classList.add("message");
+            msg.classList.add(fromUser ? "user" : "bot");
+            msg.textContent = text;
+            chatMessages.appendChild(msg);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Mock IA simple (elle répond selon les mots clés)
+        function getBotResponse(input) {
+            const lower = input.toLowerCase();
+            if (lower.includes("paris") || lower.includes("1889") || lower.includes("eiffel") || lower.includes("belle époque")) {
+                return "Paris 1889 est une destination idéale pour les amateurs de culture et de raffinement. Vous pourrez découvrir la Tour Eiffel lors de l’Exposition Universelle et l’effervescence artistique de la Belle Époque.";
+            } else if (lower.includes("crétac") || lower.includes("dino") || lower.includes("nature")) {
+                return "Le Crétacé offre une aventure unique au cœur de la nature sauvage, avec des paysages préhistoriques et une faune impressionnante. Parfait pour les explorateurs en quête d’adrénaline.";
+            } else if (lower.includes("florence") || lower.includes("renaissance") || lower.includes("art")) {
+                return "Florence 1504 vous plonge au cœur de la Renaissance, avec des œuvres monumentales et une concentration artistique exceptionnelle. Idéal pour les amoureux de l’art et de l’architecture.";
+            } else if (lower.includes("prix") || lower.includes("coût") || lower.includes("tarif")) {
+                return "Nos voyages varient entre 1 200 € et 2 500 € selon la destination et la durée. Notre offre la plus prisée est Paris 1889 à partir de 1 200 €.";
+            } else {
+                return "Je suis l’assistant IA de TimeTravel Agency. Vous pouvez me demander des renseignements sur Paris 1889, le Crétacé ou Florence 1504, les prix ou les conseils de voyage.";
+            }
+        }
+
+        // Gestion du formulaire de réservation
+        const bookingForm = document.getElementById("booking-form");
+        bookingForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const destination = document.getElementById("destination").value;
+            const dates = document.getElementById("dates").value;
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+
+            if (!destination || !dates || !name || !email) {
+                alert("Veuillez remplir tous les champs.");
+                return;
+            }
+
+            alert(
+                `Réservation validée !\n` +
+                `Destination : ${destination.split("-").pop().replace(/_/g, " ")}\n` +
+                `Dates : ${dates}\n` +
+                `Nom : ${name}\n` +
+                `Email : ${email}\n\n` +
+                `Votre demande a été envoyée à TimeTravel Agency.`
+            );
+
+            bookingForm.reset();
+        });
+
+        // Envoyer un message
+        chatSend.addEventListener("click", () => {
+            const text = chatInput.value.trim();
+            if (!text) return;
+
+            addMessage(text, true);
+            chatInput.value = "";
+
+            setTimeout(() => {
+                addMessage(getBotResponse(text), false);
+            }, 600);
+        });
+
+        // Valider en appuyant sur Entrée
+        chatInput.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+                chatSend.click();
+            }
+        });
+    </script>
+</body>
+
+</html>
