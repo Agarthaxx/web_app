@@ -1,0 +1,61 @@
+# TimeTravel Agency – Webapp Interactive
+
+Web application interactive pour une agence de voyage temporel fictive, réalisée dans le cadre du projet pédagogique **TimeTravel Agency – Webapp Interactive** (M1/M2 Digital & IA).
+
+## 📌 Objectif du projet
+
+Développer une landing page moderne et interactive présentant l’agence **TimeTravel Agency** et ses 3 destinations temporelles :
+- **Paris 1889** – La Belle Époque  
+- **Crétacé – 65 M ans** – Paysages préhistoriques et dinosaures  
+- **Florence 1504** – Renaissance et art italien  
+
+La webapp intègre un **agent conversationnel IA** qui guide le visiteur et un **formulaire de réservation** simplifié permettant de personnaliser et de planifier un voyage temporel.
+
+## 🛠️ Stack technique
+
+- **Frontend** : HTML, CSS, JavaScript (sans framework)
+- **Styling** : CSS natif, design responsive, thème sombre premium
+- **IA / Chatbot** : Agent IA côté client (JavaScript + logique de réponses basée sur mots‑clés)
+- **Déploiement** : Compatible avec Vercel / Netlify / GitHub Pages (site statique)
+
+## ✨ Features principales
+
+- **Page d’accueil immersive** avec hero section et CTA vers les destinations  
+- **Galerie des 3 destinations** avec cartes interactives et visuels des époques  
+- **Bloc FAQ** interactif (questions fréquentes sur les voyages temporels)  
+- **Formulaire de réservation** simple :  
+  - Sélection de la destination  
+  - Saisie des dates et des coordonnées  
+  - Validation côté JavaScript  
+- **Chatbot IA intégré** en bas à droite :  
+  - Icône flottante  
+  - Fenêtre de chat ouvrable au clic  
+  - Réponses adaptées aux trois destinations (Paris 1889, Crétacé, Florence 1504)  
+  - Conseils personnalisés et explications sur les prix / choix d’époque  
+
+## 🤖 IA utilisées (dans le projet)
+
+- **Assistant IA métier** :  
+  - Assistant virtuel de TimeTravel Agency, ton professionnel mais chaleureux, spécialisé en histoire et voyages temporels.  
+- **Workflow IA générale** :  
+  - Utilisation d’outils IA générative (v0.dev, Bolt.new, etc.) pour le design et la génération de code initial (décrit en cours de projet, non intégrée dans le repo final).
+
+## 📦 Structure du dépôt
+
+- `index.html` – Page principale (structure complète : header, hero, destinations, FAQ, chatbot, réservation, footer)  
+- `style.css` – Styles principaux (thème sombre, responsivité, hover/states)  
+- `script.js` – Logique du chatbot IA et validation du formulaire de réservation  
+
+## 🚀 Déploiement
+
+Le projet peut être déployé directement en tant que **site statique** :
+
+- **Vercel** : Import du repo GitHub → déploiement automatique  
+- **Netlify** : Drag & drop du dossier / import du repo  
+- **GitHub Pages** : Activer la page depuis le repo (dossier `main`)
+
+---
+
+*Projet pédagogique – TimeTravel Agency – Webapp Interactive*  
+*Nom du groupe : [à compléter]*  
+*Noms des membres : [à compléter]*
