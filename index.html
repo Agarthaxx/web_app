@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet">
     <title>TimeTravel Agency | Voyages Temporels de Luxe</title>
-    <link rel="icon"
-        href="image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏳</text></svg>">
+    <link rel="icon" href="img/Paris.png">
 
 </head>
 
@@ -60,25 +59,23 @@
                 <!-- Paris 1889 -->
                 <div class="card">
                     <div class="card-img">
-                        <img src="img/Paris.png"
-                            alt="Paris 1889 - Tour Eiffel" />
+                        <img src="img/Paris.png" alt="Paris 1889 - Tour Eiffel" />
                     </div>
                     <div class="card-content">
                         <h3>Paris 1889 – La Belle Époque</h3>
                         <p>
                             Découvrez Paris lors de l’Exposition Universelle, avec la Tour Eiffel fraîchement inaugurée,
-                            les cafés littéraires et l’effervescence artistique de la fin du XIXᵉ siècle.
+                            les cafés littéraires  de la fin du XIXᵉ siècle.
                         </p>
                         <p class="card-price">À partir de 1 200 €</p>
-                        <a href="#resa" class="            <a href=" #resa" class="btn">Réserver ce voyage</a>
+                        <a href="#resa" class="btn">Réserver ce voyage</a>
                     </div>
                 </div>
 
                 <!-- Crétacé -->
                 <div class="card">
                     <div class="card-img">
-                        <img src="img/Dino.png"
-                            alt="Crétacé - Dinosaures" />
+                        <img src="img/Dino.png" alt="Crétacé - Dinosaures" />
                     </div>
                     <div class="card-content">
                         <h3>Crétacé – 65 millions d'années</h3>
@@ -94,8 +91,7 @@
                 <!-- Florence 1504 -->
                 <div class="card">
                     <div class="card-img">
-                        <img src="img/Renaissance.png"
-                            alt="Florence 1504 - Renaissance" />
+                        <img src="img/Renaissance.png" alt="Florence 1504 - Renaissance" />
                     </div>
                     <div class="card-content">
                         <h3>Florence 1504 – Renaissance</h3>
@@ -110,6 +106,43 @@
             </div>
         </div>
     </section>
+
+    <!-- Remplace ta section #quiz par celle-ci -->
+    <section id="quiz" class="section">
+        <div class="container">
+            <h2 class="section-title">Quiz : Quelle époque vous correspond ?</h2>
+            <div class="quiz-container">
+                <div id="quiz-question" class="quiz-question">
+                    <h3 id="question-text">1. Quel type d'expérience recherchez-vous ?</h3>
+                    <div id="quiz-options" class="quiz-options">
+                        <button class="quiz-btn" data-answer="0">Culturelle et artistique</button>
+                        <button class="quiz-btn" data-answer="1">Aventure et nature</button>
+                        <button class="quiz-btn" data-answer="2">Élégance et raffinement</button>
+                    </div>
+                </div>
+
+                <!-- AJOUTE cette div quiz-nav (elle manque !) -->
+                <div class="quiz-nav">
+                    <button id="quiz-prev-btn" class="btn">Précédent</button>
+                    <div class="quiz-progress">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                    <span class="progress-badge" id="progress-text">
+                        <span class="progress-num">1</span>/<span class="progress-total">4</span>
+                        ⏳
+                    </span>
+                    <button id="quiz-next-btn" class="quiz-next-btn">Suivant</button>
+                </div>
+            </div>
+
+            <div id="quiz-result" class="quiz-result" style="display: none;">
+                <h3 id="result-title">Votre destination idéale :</h3>
+                <div id="result-content"></div>
+                <a href="#quiz" class="btn" onclick="resetQuiz()">Refaire le quiz</a>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Réservation -->
     <section id="resa" class="section">
@@ -137,12 +170,13 @@
 
                     <button type="submit" class="btn pricing-btn">Valider la réservation</button>
                 </form>
+
             </div>
         </div>
     </section>
 
     <!-- Contact / FAQ -->
-    <section class="section">
+    <section class="section" id="contact">
         <div class="container">
             <h2 class="section-title">Questions fréquentes</h2>
             <details style="margin-bottom: 1rem;">
@@ -154,7 +188,8 @@
                 </p>
             </details>
             <details style="margin-bottom: 1rem;">
-                <summary style="color: var(--accent-light); cursor: pointer; font-weight: 600;">Peut-on changer d’époque
+                <summary style="color: var(--accent-light); cursor: pointer; font-weight: 600;">Peut-on changer
+                    d’époque
                     pendant le voyage ?</summary>
                 <p style="color: var(--text-muted); margin-top: 0.5rem;">
                     Possible selon les forfaits “Premium” et “VIP”. Un supplément s’applique pour les ajustements
@@ -162,7 +197,8 @@
                 </p>
             </details>
             <details>
-                <summary style="color: var(--accent-light); cursor: pointer; font-weight: 600;">Comment est définie la
+                <summary style="color: var(--accent-light); cursor: pointer; font-weight: 600;">Comment est définie
+                    la
                     politique de prix ?</summary>
                 <p style="color: var(--text-muted); margin-top: 0.5rem;">
                     Les tarifs sont calculés en fonction de la rareté de l’événement, de la durée du séjour
@@ -221,6 +257,15 @@
             <button id="chat-send">Envoyer</button>
         </div>
     </div>
+    <!-- Dans la section #quiz, après le quiz-result -->
+    <div class="brochure-cta">
+        <a href="brochure-time-travel-agency.pdf" download class="btn brochure-btn" target="_blank">
+            📖 Télécharger notre brochure PDF
+            <span class="btn-glow">Création du site ensemble</span>
+        </a>
+        <p class="cta-caption">Guide complet : code, design, JS avancé</p>
+    </div>
+
 
     <!-- Bouton ouvre/ferme le chatbot -->
     <button id="chat-toggle" class="chat-toggle">
@@ -318,6 +363,134 @@
                 chatSend.click();
             }
         });
+
+        // Questions du quiz
+        const quizQuestions = [
+            {
+                text: "1. Quel type d'expérience recherchez-vous ?",
+                answers: ["Culturelle et artistique", "Aventure et nature", "Élégance et raffinement"]
+            },
+            {
+                text: "2. Quel type de voyage vous attire le plus ?",
+                answers: ["Ville emblématique", "Randonnée en montagne", "Palais ou château historique"]
+            },
+            {
+                text: "3. Quel style de vacances préférez‑vous ?",
+                answers: ["Musées et galeries", "Randonnées et jardins", "Dîner dans un palace historique"]
+            },
+            {
+                text: "4. Votre activité idéale :",
+                answers: ["Visiter des monuments", "Observer la faune", "Explorer des musées"]
+            }
+        ];
+
+        // Scores associés à chaque réponse (0=Culture, 1=Aventure, 2=Luxe)
+        const quizScores = [
+            [0, 1, 2], // question 1
+            [0, 1, 2], // question 2
+            [0, 1, 2], // question 3
+            [0, 1, 2]  // question 4
+        ];
+
+        let currentQuestion = 0;
+        let totalScore = 0;
+
+        const questionTextEl = document.getElementById("question-text");
+        const quizOptionsEl = document.getElementById("quiz-options");
+        const quizResultEl = document.getElementById("quiz-result");
+        const resultTitleEl = document.getElementById("result-title");
+        const resultContentEl = document.getElementById("result-content");
+        const prevBtn = document.getElementById("quiz-prev-btn");
+        const nextBtn = document.getElementById("quiz-next-btn");
+        const progressFill = document.getElementById("progress-fill");
+        const progressText = document.getElementById("progress-text");
+
+        function loadQuestion() {
+            const q = quizQuestions[currentQuestion];
+            questionTextEl.textContent = q.text;
+
+            quizOptionsEl.innerHTML = "";
+            q.answers.forEach((answer, index) => {
+                const btn = document.createElement("button");
+                btn.classList.add("quiz-btn");
+                btn.setAttribute("data-answer", index);
+                btn.textContent = answer;
+                btn.addEventListener("click", selectAnswer);
+                quizOptionsEl.appendChild(btn);
+            });
+
+            updateProgress();
+        }
+
+        function selectAnswer(e) {
+            const answerIndex = parseInt(e.target.getAttribute("data-answer"), 10);
+            totalScore += quizScores[currentQuestion][answerIndex];
+
+            if (currentQuestion < quizQuestions.length - 1) {
+                currentQuestion++;
+                loadQuestion();
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            let result;
+            let explanation;
+
+            if (totalScore < 3) {
+                result = "Les années 1920 – Art déco et glamour";
+                explanation =
+                    "Vous aimez l’élégance, le style et les ambiances raffinées. Les années 1920 avec leurs soirées glamours, leurs tenues sophistiquées et l’art déco vous correspondent parfaitement.";
+            } else if (totalScore < 6) {
+                result = "Les années 1950 – Rock'n'roll et rétro";
+                explanation =
+                    "Vous avez un côté vintage avec une touche de rébellion soft. Les années 1950, avec le rock’n’roll, la génération Eisenhower et les diners américains, vous iront à merveille.";
+            } else {
+                result = "Les années 1980 – Synthétiques et extravagantes";
+                explanation =
+                    "Si vous aimez les couleurs, le luxe flash et l’exubérance, les années 1980 sont pour vous. Mode audacieuse, musique synthétique et ambiances flashy vous sublimeront.";
+            }
+
+            resultTitleEl.textContent = `Votre destination idéale : ${result}`;
+            resultContentEl.innerHTML = `<p>${explanation}</p>`;
+            quizResultEl.style.display = "block";
+        }
+
+        function updateProgress() {
+            const progress = (currentQuestion / quizQuestions.length) * 100;
+            progressFill.style.width = `${progress}%`;
+            progressText.textContent = `Question ${currentQuestion + 1}/${quizQuestions.length}`;
+        }
+
+        function resetQuiz() {
+            currentQuestion = 0;
+            totalScore = 0;
+            quizResultEl.style.display = "none";
+            loadQuestion();
+        }
+
+        // Écouteurs de clics
+        prevBtn.addEventListener("click", () => {
+            if (currentQuestion > 0) {
+                currentQuestion--;
+                loadQuestion();
+            }
+        });
+
+        nextBtn.addEventListener("click", () => {
+            // Simule un clic sur une réponse si l’utilisateur veut skip via le bouton Suivant
+            const answerBtns = document.querySelectorAll(".quiz-btn");
+            if (answerBtns.length > 0) {
+                answerBtns[0].click(); // clic sur la première réponse
+            }
+        });
+
+        // Lancement du quiz
+        window.addEventListener("load", () => {
+            loadQuestion();
+        });
+
     </script>
 </body>
 
